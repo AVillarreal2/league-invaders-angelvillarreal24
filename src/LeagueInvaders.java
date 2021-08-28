@@ -19,6 +19,7 @@ public class LeagueInvaders {
         gameFrame.add(gamePanel);
         gameFrame.setSize(gFrameWIDTH, gFrameHEIGHT);
         gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gameFrame.addKeyListener(gamePanel);
         gameFrame.setVisible(true);
     }
 }
