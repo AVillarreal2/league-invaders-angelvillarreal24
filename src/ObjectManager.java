@@ -9,15 +9,15 @@ public class ObjectManager implements ActionListener {
     int score = 0;
     ArrayList<Projectile> projectiles = new ArrayList<Projectile>();
     ArrayList<Alien> aliens = new ArrayList<Alien>();
+    private Random random = new Random();
 
     public ObjectManager(Rocketship rocket) {
-        //  rocket = new Rocketship(1, 1, 50, 50);
         this.rocket = rocket;
     }
 
     void addAlien() {
-        Random random = new Random();
         aliens.add(new Alien(random.nextInt(LeagueInvaders.gFrameWIDTH), 0, 50, 50));
+        System.out.println("number of aliens = " + aliens.size());
     }
 
     void addProjectile(Projectile projectile) {
@@ -25,9 +25,6 @@ public class ObjectManager implements ActionListener {
     }
 
     void update() {
-        if (rocket.isActive == false) {
-            return;
-        }
         updateAliens();
         updateProjectiles();
         checkCollision();
@@ -53,7 +50,7 @@ public class ObjectManager implements ActionListener {
     }
 
     void draw(Graphics g) {
-        drawRocket(g);
+        rocket.draw(g);
         for (Alien alien : aliens) {
             alien.draw(g);
         }
@@ -69,6 +66,7 @@ public class ObjectManager implements ActionListener {
         for (int i = 0; i < aliens.size(); i++) {
             if (!aliens.get(i).isActive) {
                 aliens.remove(i);
+                System.out.println("removing alien #" + i);
             }
         }
         for (int i = 0; i < projectiles.size(); i++) {
@@ -76,10 +74,6 @@ public class ObjectManager implements ActionListener {
                 projectiles.remove(i);
             }
         }
-    }
-
-    private void drawRocket(Graphics g) {
-        rocket.draw(g);
     }
 
     private void drawAliens(Graphics g) {
@@ -91,22 +85,22 @@ public class ObjectManager implements ActionListener {
     }
 
     void checkCollision() {
-        for (Alien alien : aliens) {
-            System.out.println(aliens.size());
+        //for (Alien alien : aliens) {
+        for (int i = 0; i < aliens.size(); i++) {
+            Alien alien = aliens.get(i);
             if (!rocket.isActive) {
                 return;
             }
             if (alien.collisionBox.intersects(rocket.collisionBox)) {
                 alien.isActive = false;
                 rocket.isActive = false;
-                System.out.println("rocket dead");
+                System.out.println("killed by alien number " + i);
                 return;
             }
             for (Projectile projectile : projectiles) {
                 if (alien.collisionBox.intersects(projectile.collisionBox)) {
                     projectile.isActive = false;
                     alien.isActive = false;
-                    System.out.println("hit projectile");
                     setScore(getScore() + 1);
                 }
             }

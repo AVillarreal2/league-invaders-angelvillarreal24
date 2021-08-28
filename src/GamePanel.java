@@ -58,10 +58,11 @@ public class GamePanel extends JPanel
     }
 
     void updateGameState() {
-        objectManager.update();
-        if(rocket.isActive==false) {
+        if(!rocket.isActive) {
             currentState=END;
+            return;
         }
+        objectManager.update();
     }
 
     void updateEndState() {
