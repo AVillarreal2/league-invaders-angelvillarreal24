@@ -2,23 +2,28 @@ import javax.swing.*;
 
 public class LeagueInvaders {
     JFrame gameFrame;
-    GamePanel gamePanel;
     public static final int gFrameWIDTH = 500;
     public static final int gFrameHEIGHT = 800;
+    GamePanel gamePanel;
+    //creates variables gameFrame and gamePanel, a constructor for the GamePanel class, as well as gFrameHeight and gFrameWidth for the height and the width of the frame
     public static void main(String[] args) {
-        LeagueInvaders leagueInvaders = new LeagueInvaders();
-        leagueInvaders.setup();
+        LeagueInvaders alien = new LeagueInvaders();
+        alien.setup();
     }
+    //creates a variable for the constructor
 
     public LeagueInvaders() {
         gameFrame = new JFrame();
         gamePanel = new GamePanel();
     }
+    //initializes the gameFrame and gamePanel
 
-    void setup(){
+    void setup() {
         gameFrame.add(gamePanel);
         gameFrame.setSize(gFrameWIDTH, gFrameHEIGHT);
         gameFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        gameFrame.addKeyListener(gamePanel);
         gameFrame.setVisible(true);
     }
+    //sets up the gameFrame and gamePanel
 }

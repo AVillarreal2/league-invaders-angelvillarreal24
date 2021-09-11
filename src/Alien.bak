@@ -13,14 +13,14 @@ public class Alien extends GameObject {
             loadImage ("alien.png");
         }
     }
+    //constructor stuff, loading image alien/png
 
     void update(){
         super.update();
         y+=speed;
     }
+    //this is so it goes down constantly
     void draw(Graphics g){
-        //g.setColor(Color.YELLOW);
-        //g.fillRect(x, y, width, height);
         if (gotImage) {
             image.createGraphics().setComposite(AlphaComposite.Clear);
             g.drawImage(image, x, y, width, height, null);
@@ -28,6 +28,7 @@ public class Alien extends GameObject {
             g.fillRect(x, y, width, height);
         }
     }
+    //if it has image it will draw it otherwise it will create a rectangle
     void loadImage(String imageFile) {
         if (needImage) {
             try {
@@ -39,4 +40,5 @@ public class Alien extends GameObject {
             needImage = false;
         }
     }
+    //loads the imagefile
 }
