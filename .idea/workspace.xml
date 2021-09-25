@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570a005-35bf-4bfc-84b8-63211281a64e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GamePanel.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LeagueInvaders.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alien.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fibbonacci.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObject.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LeagueInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeagueInvaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectManager.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projectile.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rocketship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rocketship.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/asdas.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
