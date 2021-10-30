@@ -69,4 +69,8 @@ public class Rocketship extends GameObject {
         return new Projectile(x+width/2, y, 10, 10);
     }
 
+    void update(){
+        super.update();
+        //collisionBox.setBounds(x, y, width, height);
+    }
 }

@@ -25,6 +25,7 @@ public class ObjectManager implements ActionListener {
     }
 
     void update() {
+        updateRocketship();
         updateAliens();
         updateProjectiles();
         checkCollision();
@@ -47,6 +48,10 @@ public class ObjectManager implements ActionListener {
                 projectile.isActive = false;
             }
         }
+    }
+
+    private void updateRocketship(){
+        rocket.update();
     }
 
     void draw(Graphics g) {

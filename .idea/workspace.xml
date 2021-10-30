@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8570a005-35bf-4bfc-84b8-63211281a64e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Rocketship2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alien.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObject.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObject.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeagueInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeagueInvaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeagueInvaders.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ObjectManager.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/ObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Projectile.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/Projectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rocketship.bak" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rocketship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,5 +127,26 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GamePanel.bak</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GamePanel.bak</url>
+          <line>21</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Rocketship.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
